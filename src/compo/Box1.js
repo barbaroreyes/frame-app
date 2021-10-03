@@ -13,7 +13,8 @@ const Box1 = () => {
         opacity:0.01,
     }}
     transition={{
-        duration:2
+        type:'tween',
+        duration:3
     }}
 
     >
