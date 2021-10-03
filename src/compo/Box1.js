@@ -2,18 +2,18 @@ import React,{useState} from 'react';
 import {motion} from 'framer-motion';
 
 const Box1 = () => {
-    const [isanimated,setIsAnimated] = useState(false)
+    const [isAnimated,setIsAnimated] = useState(false)
 
   return (
     <div className="box-container">
     <motion.div 
     className="box"
     animate ={{
-        x:1500,
-       opacity:1,
+        x:isAnimated ? 1500: 0,
+       opacity:isAnimated ? 1: 0.5,
        backgroundColor:'red',
     //    scale:2,
-     rotate:360
+     rotate:isAnimated ? 360: 0,
       
     }}
     initial={{
@@ -29,7 +29,7 @@ const Box1 = () => {
         damping:7
         //if you dawn damping moveUp
     }}
-    onClick ={() =>setIsAnimated(!isanimated)}
+    onClick ={() =>setIsAnimated(!isAnimated)}
 
     >
         <h1>Box-1</h1>
