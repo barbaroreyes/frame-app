@@ -9,7 +9,7 @@ const Box1 = () => {
     <motion.div 
     className="box"
     animate ={{
-        x:isAnimated ? 1500: 0,
+        x:isAnimated ? 10: 0,
        opacity:isAnimated ? 1: 0.5,
        backgroundColor:'red',
     //    scale:2,
